@@ -119,7 +119,7 @@ export default function Home() {
             <a className="transition hover:text-white" href="/about">
               About
             </a>
-            <a className="transition hover:text-white" href="#process">
+            <a className="transition hover:text-white" href="/how-it-works">
               How it works
             </a>
             <a className="transition hover:text-white" href="#contact">
@@ -229,8 +229,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <section id="services" className="py-24 lg:py-32">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="mb-14 grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#537260]">
               What we clean
@@ -338,8 +338,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="process" className="bg-[#10251d] px-5 py-24 text-white sm:px-8 lg:px-12 lg:py-32">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <section id="process" className="bg-[#10251d] py-24 text-white lg:py-32">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[0.65fr_1.35fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8f34b]">
@@ -372,8 +372,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <div className="mx-auto grid w-full max-w-[1500px] gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
+      <section className="py-24 lg:py-32">
+        <div className="mx-auto grid w-full max-w-[1500px] gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 px-5 sm:px-8 lg:px-12">
           <div className="relative min-h-[540px] overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=90"
@@ -423,8 +423,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-[#10251d]/10 bg-white px-5 py-24 sm:px-8 lg:px-12">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <section className="border-y border-[#10251d]/10 bg-white py-24">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-8 lg:grid-cols-3">
             {testimonials.map((item, index) => (
               <figure
@@ -448,8 +448,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="quote" className="bg-[#b8f34b] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <div className="mx-auto grid w-full max-w-[1500px] gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
+      <section id="quote" className="bg-[#b8f34b] py-24 lg:py-32">
+        <div className="mx-auto grid w-full max-w-[1500px] gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24 px-5 sm:px-8 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em]">
               Request a quote
@@ -537,8 +537,8 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="contact" className="bg-[#091711] px-5 pb-8 pt-20 text-white sm:px-8 lg:px-12">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <footer id="contact" className="bg-[#091711] pb-8 pt-20 text-white">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-12 border-b border-white/12 pb-16 lg:grid-cols-[1.4fr_0.6fr_0.6fr]">
             <div>
               <p className="text-3xl font-semibold uppercase tracking-[0.2em]">
@@ -561,7 +561,7 @@ export default function Home() {
                 <a href="/about" className="hover:text-[#b8f34b]">
                   About
                 </a>
-                <a href="#process" className="hover:text-[#b8f34b]">
+                <a href="/how-it-works" className="hover:text-[#b8f34b]">
                   How it works
                 </a>
                 <a href="#quote" className="hover:text-[#b8f34b]">

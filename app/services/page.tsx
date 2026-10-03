@@ -136,7 +136,7 @@ export default function ServicesPage() {
             <Link className="transition hover:text-white" href="/about">
               About
             </Link>
-            <Link className="transition hover:text-white" href="/#process">
+            <Link className="transition hover:text-white" href="/how-it-works">
               How it works
             </Link>
             <Link className="transition hover:text-white" href="/#contact">
@@ -228,8 +228,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="border-b border-[#10251d]/10 bg-[#b8f34b] px-5 py-8 sm:px-8 lg:px-12">
-        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <section className="border-b border-[#10251d]/10 bg-[#b8f34b] py-8">
+        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-5 sm:px-8 lg:px-12">
           <p className="max-w-2xl text-xl font-semibold tracking-tight sm:text-2xl">
             Not sure which service fits? Start with a quote request and describe
             the space.
@@ -319,8 +319,8 @@ export default function ServicesPage() {
         ))}
       </section>
 
-      <section className="bg-[#e4eadf] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <div className="mx-auto grid w-full max-w-[1500px] gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
+      <section className="bg-[#e4eadf] py-24 lg:py-32">
+        <div className="mx-auto grid w-full max-w-[1500px] gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24 px-5 sm:px-8 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#5f7669]">
               Choosing a service
@@ -361,8 +361,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-[#b8f34b] px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
-        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+      <section className="bg-[#b8f34b] py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-10 lg:flex-row lg:items-end lg:justify-between px-5 sm:px-8 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em]">
               Ready when you are
@@ -380,8 +380,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <footer className="bg-[#091711] px-5 pb-8 pt-16 text-white sm:px-8 lg:px-12">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <footer className="bg-[#091711] pb-8 pt-16 text-white">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-12 border-b border-white/12 pb-14 lg:grid-cols-[1.4fr_0.6fr_0.6fr]">
             <div>
               <Link
@@ -407,7 +407,7 @@ export default function ServicesPage() {
                 <Link href="/about" className="hover:text-[#b8f34b]">
                   About
                 </Link>
-                <Link href="/#process" className="hover:text-[#b8f34b]">
+                <Link href="/how-it-works" className="hover:text-[#b8f34b]">
                   How it works
                 </Link>
                 <Link href="/#quote" className="hover:text-[#b8f34b]">

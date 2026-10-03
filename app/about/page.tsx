@@ -27,7 +27,7 @@ export default function AboutPage() {
           <nav className="hidden items-center gap-8 text-sm text-white/80 lg:flex">
             <Link className="transition hover:text-white" href="/services">Services</Link>
             <Link className="text-white" href="/about">About</Link>
-            <Link className="transition hover:text-white" href="/#process">How it works</Link>
+            <Link className="transition hover:text-white" href="/how-it-works">How it works</Link>
             <Link className="transition hover:text-white" href="/#contact">Contact</Link>
           </nav>
 
@@ -68,40 +68,44 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-[1500px] lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="relative min-h-[520px] lg:min-h-[760px]">
-          <Image
-            src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1800&q=90"
-            alt="Professional cleaning in a bright interior"
-            fill
-            priority
-            sizes="(max-width: 1024px) 100vw, 60vw"
-            className="object-cover"
-          />
-        </div>
+      <section className="py-8 sm:py-10 lg:py-12">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
+          <div className="grid overflow-hidden border border-[#10251d]/10 lg:grid-cols-[1.08fr_0.92fr]">
+            <div className="relative min-h-[420px] lg:min-h-[620px]">
+              <Image
+                src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1800&q=90"
+                alt="Professional cleaning in a bright interior"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 54vw"
+                className="object-cover"
+              />
+            </div>
 
-        <div className="flex flex-col justify-between bg-[#10251d] px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-20">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8f34b]">
-              Our approach
-            </p>
-            <h2 className="mt-7 text-4xl font-medium leading-[0.95] tracking-[-0.04em] sm:text-5xl">
-              Clean spaces should make life simpler.
-            </h2>
-            <p className="mt-7 text-base leading-7 text-white/60">
-              That means fewer unclear expectations, less back-and-forth, and a service that fits the property instead of forcing every client into the same package.
-            </p>
-          </div>
+            <div className="flex flex-col justify-between bg-[#10251d] px-6 py-12 text-white sm:px-8 sm:py-14 lg:px-10 lg:py-16 xl:px-12">
+              <div className="max-w-xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8f34b]">
+                  Our approach
+                </p>
+                <h2 className="mt-7 text-4xl font-medium leading-[0.95] tracking-[-0.04em] sm:text-5xl">
+                  Clean spaces should make life simpler.
+                </h2>
+                <p className="mt-7 text-base leading-7 text-white/60">
+                  That means fewer unclear expectations, less back-and-forth, and a service that fits the property instead of forcing every client into the same package.
+                </p>
+              </div>
 
-          <div className="mt-16 border-t border-white/15 pt-7">
-            <p className="text-5xl font-medium tracking-[-0.04em] text-[#b8f34b]">06</p>
-            <p className="mt-2 text-sm text-white/55">Core service categories</p>
+              <div className="mt-14 border-t border-white/15 pt-7">
+                <p className="text-4xl font-medium tracking-[-0.04em] text-[#b8f34b] sm:text-5xl">06</p>
+                <p className="mt-2 text-sm text-white/55">Core service categories</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <section className="py-24 lg:py-32">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[0.6fr_1.4fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#60766a]">
@@ -125,8 +129,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#e4eadf] px-5 py-24 sm:px-8 lg:px-12">
-        <div className="mx-auto grid w-full max-w-[1500px] gap-12 lg:grid-cols-2 lg:gap-20">
+      <section className="bg-[#e4eadf] py-24">
+        <div className="mx-auto grid w-full max-w-[1500px] gap-12 lg:grid-cols-2 lg:gap-20 px-5 sm:px-8 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#60766a]">
               Who we serve
@@ -152,8 +156,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#b8f34b] px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
-        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+      <section className="bg-[#b8f34b] py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-10 lg:flex-row lg:items-end lg:justify-between px-5 sm:px-8 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em]">
               Work with us
@@ -174,8 +178,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <footer className="bg-[#091711] px-5 pb-8 pt-16 text-white sm:px-8 lg:px-12">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <footer className="bg-[#091711] pb-8 pt-16 text-white">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-12 border-b border-white/12 pb-14 lg:grid-cols-[1.4fr_0.6fr_0.6fr]">
             <div>
               <Link href="/" className="text-3xl font-semibold uppercase tracking-[0.2em]">
@@ -190,7 +194,7 @@ export default function AboutPage() {
               <div className="mt-5 grid gap-3 text-sm">
                 <Link href="/">Home</Link>
                 <Link href="/services">Services</Link>
-                <Link href="/#process">How it works</Link>
+                <Link href="/how-it-works">How it works</Link>
                 <Link href="/#quote">Get a quote</Link>
               </div>
             </div>
