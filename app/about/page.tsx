@@ -28,7 +28,7 @@ export default function AboutPage() {
             <Link className="transition hover:text-white" href="/services">Services</Link>
             <Link className="text-white" href="/about">About</Link>
             <Link className="transition hover:text-white" href="/how-it-works">How it works</Link>
-            <Link className="transition hover:text-white" href="/#contact">Contact</Link>
+            <Link className="transition hover:text-white" href="/contact">Contact</Link>
           </nav>
 
           <Link href="/#quote" className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6">
