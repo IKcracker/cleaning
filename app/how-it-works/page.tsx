@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import MobileNav from "@/components/MobileNav";
 
 export const metadata: Metadata = {
   title: "How It Works",
@@ -56,9 +57,10 @@ export default function HowItWorksPage() {
             <Link className="transition hover:text-white" href="/contact">Contact</Link>
           </nav>
 
-          <Link href="/quote" className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6">
+          <Link href="/quote" className="hidden min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6 lg:inline-flex">
             Get a quote
           </Link>
+          <MobileNav />
         </div>
       </header>
 
