@@ -113,7 +113,7 @@ export default function Home() {
             className="hidden items-center gap-8 text-sm text-white/80 lg:flex"
             aria-label="Main navigation"
           >
-            <a className="transition hover:text-white" href="#services">
+            <a className="transition hover:text-white" href="/services">
               Services
             </a>
             <a className="transition hover:text-white" href="#about">
@@ -170,7 +170,7 @@ export default function Home() {
                   Book a cleaning
                 </a>
                 <a
-                  href="#services"
+                  href="/services"
                   className="inline-flex min-h-14 items-center justify-center border border-white/25 px-7 font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#10251d]"
                 >
                   Explore services
@@ -555,7 +555,7 @@ export default function Home() {
                 Navigate
               </p>
               <div className="mt-5 grid gap-3 text-sm">
-                <a href="#services" className="hover:text-[#b8f34b]">
+                <a href="/services" className="hover:text-[#b8f34b]">
                   Services
                 </a>
                 <a href="#about" className="hover:text-[#b8f34b]">
