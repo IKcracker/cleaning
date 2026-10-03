@@ -56,7 +56,7 @@ export default function HowItWorksPage() {
             <Link className="transition hover:text-white" href="/contact">Contact</Link>
           </nav>
 
-          <Link href="/#quote" className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6">
+          <Link href="/quote" className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6">
             Get a quote
           </Link>
         </div>
@@ -85,7 +85,7 @@ export default function HowItWorksPage() {
                   You should always know what happens next — from requesting a service to the cleaning visit itself.
                 </p>
                 <div className="sm:justify-self-end">
-                  <Link href="/#quote" className="inline-flex min-h-12 items-center justify-center bg-[#b8f34b] px-6 text-sm font-semibold text-[#10251d]">
+                  <Link href="/quote" className="inline-flex min-h-12 items-center justify-center bg-[#b8f34b] px-6 text-sm font-semibold text-[#10251d]">
                     Start a request
                   </Link>
                 </div>
@@ -158,7 +158,7 @@ export default function HowItWorksPage() {
             <Link href="/services" className="inline-flex min-h-14 items-center justify-center border border-[#10251d] px-7 font-semibold">
               View services
             </Link>
-            <Link href="/#quote" className="inline-flex min-h-14 items-center justify-center bg-[#10251d] px-7 font-semibold text-white">
+            <Link href="/quote" className="inline-flex min-h-14 items-center justify-center bg-[#10251d] px-7 font-semibold text-white">
               Get a quote
             </Link>
           </div>
@@ -182,7 +182,7 @@ export default function HowItWorksPage() {
                 <Link href="/">Home</Link>
                 <Link href="/services">Services</Link>
                 <Link href="/about">About</Link>
-                <Link href="/#quote">Get a quote</Link>
+                <Link href="/quote">Get a quote</Link>
               </div>
             </div>
             <div>
