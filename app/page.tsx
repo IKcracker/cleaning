@@ -128,7 +128,7 @@ export default function Home() {
           </nav>
 
           <a
-            href="#quote"
+            href="/quote"
             className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6"
           >
             Get a quote
@@ -164,7 +164,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="#quote"
+                  href="/quote"
                   className="inline-flex min-h-14 items-center justify-center bg-[#b8f34b] px-7 font-semibold text-[#10251d] transition hover:bg-white"
                 >
                   Book a cleaning
@@ -273,7 +273,7 @@ export default function Home() {
                     {service.description}
                   </p>
                   <a
-                    href="#quote"
+                    href="/quote"
                     className="mt-7 inline-flex items-center gap-3 text-sm font-semibold"
                   >
                     Request this service
@@ -407,7 +407,7 @@ export default function Home() {
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <a
-                href="#quote"
+                href="/quote"
                 className="inline-flex min-h-14 items-center justify-center bg-[#10251d] px-7 font-semibold text-white transition hover:bg-[#1d3d30]"
               >
                 Request commercial quote
@@ -564,7 +564,7 @@ export default function Home() {
                 <a href="/how-it-works" className="hover:text-[#b8f34b]">
                   How it works
                 </a>
-                <a href="#quote" className="hover:text-[#b8f34b]">
+                <a href="/quote" className="hover:text-[#b8f34b]">
                   Get a quote
                 </a>
               </div>

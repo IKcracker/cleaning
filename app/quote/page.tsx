@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Get a Quote",
   description:
-    "Contact Cleaning for residential, office, deep, specialist, or commercial cleaning enquiries.",
+    "Request a cleaning quote for residential, office, deep, specialist, or commercial cleaning services.",
 };
 
-export default function ContactPage() {
+export default function QuotePage() {
   return (
     <main className="bg-[#f5f7f3] text-[#10251d]">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#10251d]/95 text-white backdrop-blur-xl">
@@ -20,67 +20,67 @@ export default function ContactPage() {
             <Link className="transition hover:text-white" href="/services">Services</Link>
             <Link className="transition hover:text-white" href="/about">About</Link>
             <Link className="transition hover:text-white" href="/how-it-works">How it works</Link>
-            <Link className="text-white" href="/contact">Contact</Link>
+            <Link className="transition hover:text-white" href="/contact">Contact</Link>
           </nav>
 
-          <Link href="/quote" className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6">
+          <Link href="/quote" className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] sm:px-6">
             Get a quote
           </Link>
         </div>
       </header>
 
-      <section className="border-b border-[#10251d]/10 bg-[#e4eadf]">
-        <div className="mx-auto w-full max-w-[1500px] px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
-          <div className="grid gap-12 lg:grid-cols-[0.5fr_1.5fr] lg:gap-16">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#60766a]">
-                Contact
-              </p>
-              <p className="mt-6 max-w-xs text-sm leading-7 text-[#61736a]">
-                Questions, custom scopes, recurring cleaning, or a once-off service — start here.
-              </p>
-            </div>
+      <section className="border-b border-[#10251d]/10 bg-[#10251d] py-16 text-white sm:py-20 lg:py-24">
+        <div className="mx-auto grid w-full max-w-[1500px] gap-12 px-5 sm:px-8 lg:grid-cols-[0.55fr_1.45fr] lg:px-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8f34b]">
+              Quote request
+            </p>
+            <p className="mt-6 max-w-xs text-sm leading-7 text-white/55">
+              Give us enough detail to understand the space and we can confirm the right service and next step.
+            </p>
+          </div>
 
-            <div>
-              <h1 className="max-w-6xl text-[clamp(3.7rem,7.4vw,7.8rem)] font-medium leading-[0.88] tracking-[-0.06em]">
-                Tell us what
-                <span className="block text-[#74877c]">you need cleaned.</span>
-              </h1>
+          <div>
+            <h1 className="max-w-6xl text-[clamp(3.8rem,7.5vw,8rem)] font-medium leading-[0.88] tracking-[-0.06em]">
+              Let’s scope the
+              <span className="block text-white/40">clean properly.</span>
+            </h1>
 
-              <div className="mt-12 grid gap-8 border-t border-[#10251d]/15 pt-8 sm:grid-cols-2">
-                <p className="max-w-lg text-lg leading-8 text-[#30463c]">
-                  The clearer the request, the faster we can confirm the right service and next step.
-                </p>
-                <p className="max-w-lg text-base leading-7 text-[#61736a] sm:justify-self-end">
-                  Share the type of space, service needed, timing, and any details that affect access or scope.
-                </p>
-              </div>
+            <div className="mt-12 grid gap-8 border-t border-white/15 pt-8 sm:grid-cols-2">
+              <p className="max-w-lg text-lg leading-8 text-white/80">
+                A better quote starts with a better brief.
+              </p>
+              <p className="max-w-lg text-base leading-7 text-white/55 sm:justify-self-end">
+                Tell us what kind of space it is, the service you need, approximate size and preferred timing.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="py-20 lg:py-28">
-        <div className="mx-auto grid w-full max-w-[1500px] gap-12 px-5 sm:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:px-12 lg:gap-20">
-          <div>
+        <div className="mx-auto grid w-full max-w-[1500px] gap-12 px-5 sm:px-8 lg:grid-cols-[0.72fr_1.28fr] lg:px-12 lg:gap-20">
+          <aside>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#60766a]">
-              Start a conversation
+              What helps us quote accurately
             </p>
 
             <div className="mt-8 border-t border-[#10251d]/15">
               {[
-                ["Service", "Home, office, deep, specialist or commercial cleaning."],
-                ["Space", "Tell us what type of property or environment needs attention."],
-                ["Timing", "Share your preferred date, day, or time window."],
-                ["Details", "Add anything important about access, surfaces, size or expectations."],
-              ].map(([title, copy]) => (
-                <div key={title} className="border-b border-[#10251d]/15 py-6">
-                  <h2 className="text-lg font-semibold">{title}</h2>
-                  <p className="mt-2 text-sm leading-6 text-[#5d7066]">{copy}</p>
+                ["01", "Type of space", "House, apartment, office, school, restaurant, retail, or another environment."],
+                ["02", "Service required", "Routine, once-off, deep, window, carpet, upholstery or commercial cleaning."],
+                ["03", "Approximate size", "A rough floor area, room count, or list of areas that need attention."],
+                ["04", "Timing", "Preferred date, time window, recurring frequency, or deadline."],
+                ["05", "Special requirements", "Access details, pets, surfaces, equipment, high-traffic areas or other constraints."],
+              ].map(([number, title, copy]) => (
+                <div key={number} className="border-b border-[#10251d]/15 py-6">
+                  <p className="text-xs font-semibold text-[#708579]">{number}</p>
+                  <h2 className="mt-3 text-lg font-semibold">{title}</h2>
+                  <p className="mt-2 text-sm leading-6 text-[#5c6f65]">{copy}</p>
                 </div>
               ))}
             </div>
-          </div>
+          </aside>
 
           <form className="grid gap-5 border border-[#10251d]/12 bg-white p-6 sm:grid-cols-2 sm:p-8 lg:p-10">
             <label className="grid gap-2 text-sm font-semibold">
@@ -118,6 +118,7 @@ export default function ContactPage() {
             <label className="grid gap-2 text-sm font-semibold">
               Service
               <select
+                required
                 name="service"
                 defaultValue=""
                 className="min-h-14 border border-[#10251d]/18 bg-transparent px-4 font-normal outline-none transition focus:border-[#10251d]"
@@ -132,13 +133,57 @@ export default function ContactPage() {
               </select>
             </label>
 
+            <label className="grid gap-2 text-sm font-semibold">
+              Property type
+              <input
+                name="propertyType"
+                type="text"
+                placeholder="House, office, restaurant..."
+                className="min-h-14 border border-[#10251d]/18 bg-transparent px-4 font-normal outline-none transition placeholder:text-[#10251d]/40 focus:border-[#10251d]"
+              />
+            </label>
+
+            <label className="grid gap-2 text-sm font-semibold">
+              Approximate size
+              <input
+                name="size"
+                type="text"
+                placeholder="e.g. 3 bedrooms or 250 m²"
+                className="min-h-14 border border-[#10251d]/18 bg-transparent px-4 font-normal outline-none transition placeholder:text-[#10251d]/40 focus:border-[#10251d]"
+              />
+            </label>
+
+            <label className="grid gap-2 text-sm font-semibold">
+              Preferred date
+              <input
+                name="preferredDate"
+                type="date"
+                className="min-h-14 border border-[#10251d]/18 bg-transparent px-4 font-normal outline-none transition focus:border-[#10251d]"
+              />
+            </label>
+
+            <label className="grid gap-2 text-sm font-semibold">
+              Frequency
+              <select
+                name="frequency"
+                defaultValue=""
+                className="min-h-14 border border-[#10251d]/18 bg-transparent px-4 font-normal outline-none transition focus:border-[#10251d]"
+              >
+                <option value="" disabled>Select frequency</option>
+                <option>Once-off</option>
+                <option>Weekly</option>
+                <option>Bi-weekly</option>
+                <option>Monthly</option>
+                <option>Other / not sure</option>
+              </select>
+            </label>
+
             <label className="grid gap-2 text-sm font-semibold sm:col-span-2">
-              Message
+              Additional details
               <textarea
-                required
                 name="message"
                 rows={7}
-                placeholder="Tell us about the space, preferred timing and anything else we should know."
+                placeholder="Tell us what needs attention, access requirements, special surfaces, pets, or anything else that may affect the quote."
                 className="border border-[#10251d]/18 bg-transparent p-4 font-normal outline-none transition placeholder:text-[#10251d]/40 focus:border-[#10251d]"
               />
             </label>
@@ -148,27 +193,27 @@ export default function ContactPage() {
                 type="submit"
                 className="inline-flex min-h-14 w-full items-center justify-center bg-[#10251d] px-7 font-semibold text-white transition hover:bg-[#1d3d30] sm:w-auto"
               >
-                Send enquiry
+                Submit quote request
               </button>
-              <p className="mt-3 text-xs leading-5 text-[#607168]">
-                Contact delivery will be connected when we wire the forms to email or the CRM.
+              <p className="mt-3 max-w-xl text-xs leading-5 text-[#607168]">
+                This page currently captures the full quote-request UI. Submission delivery will be wired in a separate feature branch.
               </p>
             </div>
           </form>
         </div>
       </section>
 
-      <section className="bg-[#10251d] py-20 text-white lg:py-24">
+      <section className="bg-[#e4eadf] py-20 lg:py-24">
         <div className="mx-auto grid w-full max-w-[1500px] gap-10 px-5 sm:px-8 lg:grid-cols-3 lg:px-12">
           {[
-            ["01", "Residential", "For homes, apartments and private spaces."],
-            ["02", "Workplace", "For offices, shared spaces and recurring upkeep."],
-            ["03", "Commercial", "For larger operational and custom cleaning requirements."],
+            ["01", "We review", "We check the request and identify anything that needs clarification."],
+            ["02", "We confirm", "We confirm the service scope, availability and next step."],
+            ["03", "You decide", "Once the quote is clear, you can proceed with scheduling the clean."],
           ].map(([number, title, copy]) => (
-            <div key={number} className="border-t border-white/15 pt-6">
-              <p className="text-xs font-semibold text-[#b8f34b]">{number}</p>
+            <div key={number} className="border-t border-[#10251d]/15 pt-6">
+              <p className="text-xs font-semibold text-[#6f8378]">{number}</p>
               <h2 className="mt-8 text-2xl font-semibold">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-white/55">{copy}</p>
+              <p className="mt-3 text-sm leading-6 text-[#5a6d63]">{copy}</p>
             </div>
           ))}
         </div>
@@ -192,6 +237,7 @@ export default function ContactPage() {
                 <Link href="/services">Services</Link>
                 <Link href="/about">About</Link>
                 <Link href="/how-it-works">How it works</Link>
+                <Link href="/contact">Contact</Link>
               </div>
             </div>
             <div>

@@ -145,7 +145,7 @@ export default function ServicesPage() {
           </nav>
 
           <Link
-            href="/#quote"
+            href="/quote"
             className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6"
           >
             Get a quote
@@ -168,7 +168,7 @@ export default function ServicesPage() {
               </div>
 
               <Link
-                href="/#quote"
+                href="/quote"
                 className="inline-flex min-h-12 w-fit items-center justify-center border border-[#10251d] px-6 text-sm font-semibold transition hover:bg-[#10251d] hover:text-white"
               >
                 Request a quote
@@ -235,7 +235,7 @@ export default function ServicesPage() {
             the space.
           </p>
           <Link
-            href="/#quote"
+            href="/quote"
             className="inline-flex min-h-12 shrink-0 items-center justify-center bg-[#10251d] px-6 text-sm font-semibold text-white"
           >
             Request a quote
@@ -301,7 +301,7 @@ export default function ServicesPage() {
 
                 <div className="mt-10 flex flex-wrap gap-3">
                   <Link
-                    href="/#quote"
+                    href="/quote"
                     className="inline-flex min-h-14 items-center justify-center bg-[#10251d] px-7 font-semibold text-white transition hover:bg-[#1d3d30]"
                   >
                     Request this service
@@ -372,7 +372,7 @@ export default function ServicesPage() {
             </h2>
           </div>
           <Link
-            href="/#quote"
+            href="/quote"
             className="inline-flex min-h-14 shrink-0 items-center justify-center bg-[#10251d] px-8 font-semibold text-white transition hover:bg-[#1d3d30]"
           >
             Get a quote
@@ -410,7 +410,7 @@ export default function ServicesPage() {
                 <Link href="/how-it-works" className="hover:text-[#b8f34b]">
                   How it works
                 </Link>
-                <Link href="/#quote" className="hover:text-[#b8f34b]">
+                <Link href="/quote" className="hover:text-[#b8f34b]">
                   Get a quote
                 </Link>
               </div>
