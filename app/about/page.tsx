@@ -100,8 +100,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <section className="py-24 lg:py-32">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-[0.6fr_1.4fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#60766a]">
@@ -125,8 +125,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#e4eadf] px-5 py-24 sm:px-8 lg:px-12">
-        <div className="mx-auto grid w-full max-w-[1500px] gap-12 lg:grid-cols-2 lg:gap-20">
+      <section className="bg-[#e4eadf] py-24">
+        <div className="mx-auto grid w-full max-w-[1500px] gap-12 lg:grid-cols-2 lg:gap-20 px-5 sm:px-8 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#60766a]">
               Who we serve
@@ -152,8 +152,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#b8f34b] px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
-        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+      <section className="bg-[#b8f34b] py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-10 lg:flex-row lg:items-end lg:justify-between px-5 sm:px-8 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em]">
               Work with us
@@ -174,8 +174,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <footer className="bg-[#091711] px-5 pb-8 pt-16 text-white sm:px-8 lg:px-12">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <footer className="bg-[#091711] pb-8 pt-16 text-white">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-12 border-b border-white/12 pb-14 lg:grid-cols-[1.4fr_0.6fr_0.6fr]">
             <div>
               <Link href="/" className="text-3xl font-semibold uppercase tracking-[0.2em]">
