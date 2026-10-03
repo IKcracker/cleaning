@@ -139,7 +139,7 @@ export default function ServicesPage() {
             <Link className="transition hover:text-white" href="/how-it-works">
               How it works
             </Link>
-            <Link className="transition hover:text-white" href="/#contact">
+            <Link className="transition hover:text-white" href="/contact">
               Contact
             </Link>
           </nav>
