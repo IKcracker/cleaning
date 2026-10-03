@@ -119,7 +119,7 @@ export default function Home() {
             <a className="transition hover:text-white" href="/about">
               About
             </a>
-            <a className="transition hover:text-white" href="#process">
+            <a className="transition hover:text-white" href="/how-it-works">
               How it works
             </a>
             <a className="transition hover:text-white" href="#contact">
@@ -561,7 +561,7 @@ export default function Home() {
                 <a href="/about" className="hover:text-[#b8f34b]">
                   About
                 </a>
-                <a href="#process" className="hover:text-[#b8f34b]">
+                <a href="/how-it-works" className="hover:text-[#b8f34b]">
                   How it works
                 </a>
                 <a href="#quote" className="hover:text-[#b8f34b]">
