@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MobileNav from "@/components/MobileNav";
 
 const services = [
   {
@@ -129,10 +130,11 @@ export default function Home() {
 
           <a
             href="/quote"
-            className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6"
+            className="hidden min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6 lg:inline-flex"
           >
             Get a quote
           </a>
+          <MobileNav />
         </div>
       </header>
 
