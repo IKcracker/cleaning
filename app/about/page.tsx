@@ -27,7 +27,7 @@ export default function AboutPage() {
           <nav className="hidden items-center gap-8 text-sm text-white/80 lg:flex">
             <Link className="transition hover:text-white" href="/services">Services</Link>
             <Link className="text-white" href="/about">About</Link>
-            <Link className="transition hover:text-white" href="/#process">How it works</Link>
+            <Link className="transition hover:text-white" href="/how-it-works">How it works</Link>
             <Link className="transition hover:text-white" href="/#contact">Contact</Link>
           </nav>
 
@@ -190,7 +190,7 @@ export default function AboutPage() {
               <div className="mt-5 grid gap-3 text-sm">
                 <Link href="/">Home</Link>
                 <Link href="/services">Services</Link>
-                <Link href="/#process">How it works</Link>
+                <Link href="/how-it-works">How it works</Link>
                 <Link href="/#quote">Get a quote</Link>
               </div>
             </div>
