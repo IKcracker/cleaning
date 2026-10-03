@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import QuoteForm from "./QuoteForm";
+import MobileNav from "@/components/MobileNav";
 
 export const metadata: Metadata = {
   title: "Get a Quote",
@@ -24,9 +25,10 @@ export default function QuotePage() {
             <Link className="transition hover:text-white" href="/contact">Contact</Link>
           </nav>
 
-          <Link href="/quote" className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] sm:px-6">
+          <Link href="/quote" className="hidden min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] sm:px-6 lg:inline-flex">
             Get a quote
           </Link>
+          <MobileNav />
         </div>
       </header>
 
