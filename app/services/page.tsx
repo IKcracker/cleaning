@@ -153,44 +153,86 @@ export default function ServicesPage() {
         </div>
       </header>
 
-      <section className="bg-[#10251d] px-5 pb-20 pt-20 text-white sm:px-8 lg:px-12 lg:pb-28 lg:pt-28">
-        <div className="mx-auto w-full max-w-[1500px]">
-          <div className="grid gap-12 lg:grid-cols-[0.55fr_1.45fr] lg:items-end">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8f34b]">
-                Our services
-              </p>
-              <p className="mt-6 max-w-sm text-base leading-7 text-white/55">
-                Choose a service that fits your space. For larger or unusual
-                requirements, we can shape the scope around the property.
-              </p>
-            </div>
+      <section id="top" className="bg-[#10251d] text-white">
+        <div className="mx-auto grid min-h-[680px] w-full max-w-[1500px] lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="flex flex-col justify-center px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
+            <p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.24em] text-[#b8f34b]">
+              <span className="h-px w-9 bg-[#b8f34b]" />
+              Our services
+            </p>
 
-            <h1 className="max-w-6xl text-[clamp(4rem,9vw,9rem)] font-medium leading-[0.82] tracking-[-0.065em]">
-              Cleaning for
-              <span className="block text-white/40">every kind</span>
-              <span className="block text-[#b8f34b]">of space.</span>
+            <h1 className="mt-8 max-w-3xl text-5xl font-medium leading-[0.92] tracking-[-0.05em] sm:text-6xl lg:text-7xl xl:text-8xl">
+              The right clean
+              <span className="block text-white/42">for every space.</span>
             </h1>
+
+            <p className="mt-7 max-w-xl text-base leading-7 text-white/62 sm:text-lg sm:leading-8">
+              From regular home care to detailed commercial cleaning, choose a
+              service that fits the way your space is used.
+            </p>
+
+            <div className="mt-9 flex flex-wrap gap-3">
+              <Link
+                href="/#quote"
+                className="inline-flex min-h-14 items-center justify-center bg-[#b8f34b] px-7 font-semibold text-[#10251d] transition hover:bg-white"
+              >
+                Get a quote
+              </Link>
+              <a
+                href="#home-cleaning"
+                className="inline-flex min-h-14 items-center justify-center border border-white/25 px-7 font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#10251d]"
+              >
+                Browse services
+              </a>
+            </div>
           </div>
 
-          <div className="mt-16 grid gap-px border border-white/12 bg-white/12 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="relative min-h-[460px] overflow-hidden lg:min-h-full">
+            <Image
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=90"
+              alt="Professional cleaner working in a bright modern interior"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 55vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#10251d]/55 via-transparent to-transparent lg:bg-gradient-to-r lg:from-[#10251d]/10 lg:to-transparent" />
+
+            <div className="absolute bottom-5 left-5 right-5 border border-white/15 bg-[#10251d]/88 p-5 backdrop-blur-xl sm:bottom-8 sm:left-8 sm:right-8 sm:p-6">
+              <div className="grid gap-5 sm:grid-cols-[1fr_auto] sm:items-end">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b8f34b]">
+                    Residential + commercial
+                  </p>
+                  <p className="mt-3 max-w-md text-xl font-semibold tracking-tight sm:text-2xl">
+                    Flexible cleaning support built around the space.
+                  </p>
+                </div>
+                <p className="text-sm text-white/55">6 core services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-white/12">
+          <div className="mx-auto grid w-full max-w-[1500px] sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <a
                 key={service.id}
                 href={`#${service.id}`}
-                className="group flex items-center justify-between bg-[#10251d] p-5 transition hover:bg-[#173126] sm:p-6"
+                className="group flex min-h-24 items-center justify-between border-b border-white/12 px-5 py-5 transition hover:bg-white/[0.05] sm:px-8 lg:border-r lg:px-10"
               >
-                <span>
-                  <span className="block text-xs font-semibold text-[#b8f34b]">
+                <span className="flex items-center gap-4">
+                  <span className="text-xs font-semibold text-[#b8f34b]">
                     {service.number}
                   </span>
-                  <span className="mt-2 block text-lg font-semibold">
+                  <span className="text-base font-semibold sm:text-lg">
                     {service.title}
                   </span>
                 </span>
                 <span
                   aria-hidden="true"
-                  className="text-xl text-white/40 transition group-hover:translate-y-1 group-hover:text-white"
+                  className="text-lg text-white/35 transition group-hover:translate-y-1 group-hover:text-white"
                 >
                   ↓
                 </span>
@@ -291,10 +333,7 @@ export default function ServicesPage() {
         ))}
       </section>
 
-      <section
-        id="top"
-        className="bg-[#e4eadf] px-5 py-24 sm:px-8 lg:px-12 lg:py-32"
-      >
+      <section className="bg-[#e4eadf] px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
         <div className="mx-auto grid w-full max-w-[1500px] gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#5f7669]">
