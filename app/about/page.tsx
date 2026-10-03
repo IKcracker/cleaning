@@ -68,34 +68,38 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-[1500px] lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="relative min-h-[520px] lg:min-h-[760px]">
-          <Image
-            src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1800&q=90"
-            alt="Professional cleaning in a bright interior"
-            fill
-            priority
-            sizes="(max-width: 1024px) 100vw, 60vw"
-            className="object-cover"
-          />
-        </div>
+      <section className="py-8 sm:py-10 lg:py-12">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
+          <div className="grid overflow-hidden border border-[#10251d]/10 lg:grid-cols-[1.08fr_0.92fr]">
+            <div className="relative min-h-[420px] lg:min-h-[620px]">
+              <Image
+                src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1800&q=90"
+                alt="Professional cleaning in a bright interior"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 54vw"
+                className="object-cover"
+              />
+            </div>
 
-        <div className="flex flex-col justify-between bg-[#10251d] px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-20">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8f34b]">
-              Our approach
-            </p>
-            <h2 className="mt-7 text-4xl font-medium leading-[0.95] tracking-[-0.04em] sm:text-5xl">
-              Clean spaces should make life simpler.
-            </h2>
-            <p className="mt-7 text-base leading-7 text-white/60">
-              That means fewer unclear expectations, less back-and-forth, and a service that fits the property instead of forcing every client into the same package.
-            </p>
-          </div>
+            <div className="flex flex-col justify-between bg-[#10251d] px-6 py-12 text-white sm:px-8 sm:py-14 lg:px-10 lg:py-16 xl:px-12">
+              <div className="max-w-xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8f34b]">
+                  Our approach
+                </p>
+                <h2 className="mt-7 text-4xl font-medium leading-[0.95] tracking-[-0.04em] sm:text-5xl">
+                  Clean spaces should make life simpler.
+                </h2>
+                <p className="mt-7 text-base leading-7 text-white/60">
+                  That means fewer unclear expectations, less back-and-forth, and a service that fits the property instead of forcing every client into the same package.
+                </p>
+              </div>
 
-          <div className="mt-16 border-t border-white/15 pt-7">
-            <p className="text-5xl font-medium tracking-[-0.04em] text-[#b8f34b]">06</p>
-            <p className="mt-2 text-sm text-white/55">Core service categories</p>
+              <div className="mt-14 border-t border-white/15 pt-7">
+                <p className="text-4xl font-medium tracking-[-0.04em] text-[#b8f34b] sm:text-5xl">06</p>
+                <p className="mt-2 text-sm text-white/55">Core service categories</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
