@@ -62,8 +62,8 @@ export default function HowItWorksPage() {
         </div>
       </header>
 
-      <section className="bg-[#10251d] px-5 py-16 text-white sm:px-8 lg:px-12 lg:py-24">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <section className="bg-[#10251d] py-16 text-white lg:py-24">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-14 lg:grid-cols-[0.5fr_1.5fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#b8f34b]">
@@ -95,8 +95,8 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <section className="py-24 lg:py-32">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="border-t border-[#10251d]/15">
             {steps.map((step) => (
               <article
@@ -116,8 +116,8 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <section className="bg-[#e4eadf] px-5 py-24 sm:px-8 lg:px-12">
-        <div className="mx-auto grid w-full max-w-[1500px] gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
+      <section className="bg-[#e4eadf] py-24">
+        <div className="mx-auto grid w-full max-w-[1500px] gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24 px-5 sm:px-8 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#60766a]">
               Before the visit
@@ -143,8 +143,8 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <section className="bg-[#b8f34b] px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
-        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+      <section className="bg-[#b8f34b] py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-10 lg:flex-row lg:items-end lg:justify-between px-5 sm:px-8 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em]">
               Ready to start
@@ -165,8 +165,8 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <footer className="bg-[#091711] px-5 pb-8 pt-16 text-white sm:px-8 lg:px-12">
-        <div className="mx-auto w-full max-w-[1500px]">
+      <footer className="bg-[#091711] pb-8 pt-16 text-white">
+        <div className="mx-auto w-full max-w-[1500px] px-5 sm:px-8 lg:px-12">
           <div className="grid gap-12 border-b border-white/12 pb-14 lg:grid-cols-[1.4fr_0.6fr_0.6fr]">
             <div>
               <Link href="/" className="text-3xl font-semibold uppercase tracking-[0.2em]">
