@@ -31,7 +31,7 @@ export default function AboutPage() {
             <Link className="transition hover:text-white" href="/contact">Contact</Link>
           </nav>
 
-          <Link href="/#quote" className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6">
+          <Link href="/quote" className="inline-flex min-h-11 items-center justify-center bg-[#b8f34b] px-5 text-sm font-semibold text-[#10251d] transition hover:bg-white sm:px-6">
             Get a quote
           </Link>
         </div>
@@ -171,7 +171,7 @@ export default function AboutPage() {
             <Link href="/services" className="inline-flex min-h-14 items-center justify-center border border-[#10251d] px-7 font-semibold">
               View services
             </Link>
-            <Link href="/#quote" className="inline-flex min-h-14 items-center justify-center bg-[#10251d] px-7 font-semibold text-white">
+            <Link href="/quote" className="inline-flex min-h-14 items-center justify-center bg-[#10251d] px-7 font-semibold text-white">
               Get a quote
             </Link>
           </div>
@@ -195,7 +195,7 @@ export default function AboutPage() {
                 <Link href="/">Home</Link>
                 <Link href="/services">Services</Link>
                 <Link href="/how-it-works">How it works</Link>
-                <Link href="/#quote">Get a quote</Link>
+                <Link href="/quote">Get a quote</Link>
               </div>
             </div>
             <div>
