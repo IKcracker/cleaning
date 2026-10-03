@@ -122,7 +122,7 @@ export default function Home() {
             <a className="transition hover:text-white" href="/how-it-works">
               How it works
             </a>
-            <a className="transition hover:text-white" href="#contact">
+            <a className="transition hover:text-white" href="/contact">
               Contact
             </a>
           </nav>
@@ -413,7 +413,7 @@ export default function Home() {
                 Request commercial quote
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-flex min-h-14 items-center justify-center border border-[#10251d]/20 px-7 font-semibold transition hover:border-[#10251d]"
               >
                 Talk to us
