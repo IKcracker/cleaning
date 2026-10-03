@@ -448,92 +448,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="quote" className="bg-[#b8f34b] py-24 lg:py-32">
-        <div className="mx-auto grid w-full max-w-[1500px] gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24 px-5 sm:px-8 lg:px-12">
+      <section id="quote" className="bg-[#b8f34b] py-24 lg:py-28">
+        <div className="mx-auto flex w-full max-w-[1500px] flex-col gap-10 px-5 sm:px-8 lg:flex-row lg:items-end lg:justify-between lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em]">
               Request a quote
             </p>
-            <h2 className="mt-7 text-5xl font-medium leading-[0.94] tracking-[-0.05em] sm:text-6xl lg:text-7xl">
+            <h2 className="mt-7 max-w-4xl text-5xl font-medium leading-[0.94] tracking-[-0.05em] sm:text-6xl lg:text-7xl">
               Tell us what needs cleaning.
             </h2>
-            <p className="mt-7 max-w-md text-base leading-7 text-[#10251d]/70">
-              Share the basics and we can confirm the right service, scope and
-              next step for your space.
+            <p className="mt-7 max-w-xl text-base leading-7 text-[#10251d]/70">
+              Use the dedicated quote page to share the space, service, timing
+              and details we need to scope the clean properly.
             </p>
           </div>
 
-          <form className="grid gap-5 sm:grid-cols-2">
-            <label className="grid gap-2 text-sm font-semibold">
-              Name
-              <input
-                required
-                name="name"
-                type="text"
-                placeholder="Your name"
-                className="min-h-14 border border-[#10251d]/20 bg-transparent px-4 font-normal outline-none transition placeholder:text-[#10251d]/45 focus:border-[#10251d]"
-              />
-            </label>
-            <label className="grid gap-2 text-sm font-semibold">
-              Email
-              <input
-                required
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-                className="min-h-14 border border-[#10251d]/20 bg-transparent px-4 font-normal outline-none transition placeholder:text-[#10251d]/45 focus:border-[#10251d]"
-              />
-            </label>
-            <label className="grid gap-2 text-sm font-semibold">
-              Phone
-              <input
-                name="phone"
-                type="tel"
-                placeholder="Your contact number"
-                className="min-h-14 border border-[#10251d]/20 bg-transparent px-4 font-normal outline-none transition placeholder:text-[#10251d]/45 focus:border-[#10251d]"
-              />
-            </label>
-            <label className="grid gap-2 text-sm font-semibold">
-              Service
-              <select
-                required
-                name="service"
-                defaultValue=""
-                className="min-h-14 border border-[#10251d]/20 bg-transparent px-4 font-normal outline-none transition focus:border-[#10251d]"
-              >
-                <option value="" disabled>
-                  Select a service
-                </option>
-                <option>Home cleaning</option>
-                <option>Office cleaning</option>
-                <option>Deep cleaning</option>
-                <option>Carpet & upholstery</option>
-                <option>Window cleaning</option>
-                <option>Commercial cleaning</option>
-              </select>
-            </label>
-            <label className="grid gap-2 text-sm font-semibold sm:col-span-2">
-              Tell us about the space
-              <textarea
-                name="message"
-                rows={5}
-                placeholder="Property type, approximate size, preferred date, and anything else we should know."
-                className="border border-[#10251d]/20 bg-transparent p-4 font-normal outline-none transition placeholder:text-[#10251d]/45 focus:border-[#10251d]"
-              />
-            </label>
-            <div className="sm:col-span-2">
-              <button
-                type="submit"
-                className="inline-flex min-h-14 w-full items-center justify-center bg-[#10251d] px-7 font-semibold text-white transition hover:bg-[#1d3d30] sm:w-auto"
-              >
-                Send quote request
-              </button>
-              <p className="mt-3 max-w-xl text-xs leading-5 text-[#10251d]/55">
-                This first version includes the booking interface. Form delivery
-                can be connected to your preferred email, CRM or database next.
-              </p>
-            </div>
-          </form>
+          <a
+            href="/quote"
+            className="inline-flex min-h-14 shrink-0 items-center justify-center bg-[#10251d] px-8 font-semibold text-white transition hover:bg-[#1d3d30]"
+          >
+            Start quote request
+          </a>
         </div>
       </section>
 
