@@ -136,7 +136,7 @@ export default function ServicesPage() {
             <Link className="transition hover:text-white" href="/about">
               About
             </Link>
-            <Link className="transition hover:text-white" href="/#process">
+            <Link className="transition hover:text-white" href="/how-it-works">
               How it works
             </Link>
             <Link className="transition hover:text-white" href="/#contact">
@@ -407,7 +407,7 @@ export default function ServicesPage() {
                 <Link href="/about" className="hover:text-[#b8f34b]">
                   About
                 </Link>
-                <Link href="/#process" className="hover:text-[#b8f34b]">
+                <Link href="/how-it-works" className="hover:text-[#b8f34b]">
                   How it works
                 </Link>
                 <Link href="/#quote" className="hover:text-[#b8f34b]">
